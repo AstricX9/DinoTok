@@ -22,7 +22,7 @@
       "fun_fact": "T-Rex had the strongest bite of any land animal ever!",
       "image_url": "assets/max-rex.jpg",
       "image_credit": "Max Bellomio",
-      "hashtags": ["#DinoFacts", "#TRex", "#Prehistoric", "#DinoTok"]
+      "hashtags": ["#DinoFacts", "#TRex", "#Prehistoric", "#Lips"]
     },
     {
       "id": 2,
@@ -39,14 +39,14 @@
       "stats": {
         "length": "6.8 feet",
         "height": "1.6 feet",
-        "weight": "33 pounds",
+        "weight": "14 kg",
         "speed": "40 mph"
       },
       "diet": "Carnivore",
       "fun_fact": "Velociraptors were actually covered in feathers and more closely related to modern birds than lizards!",
       "image_url": "assets/velo.jpg",
       "image_credit": "Prehistoric Planet AppleTV+",
-      "hashtags": ["#RaptorFacts", "#DinoScience", "#FeatheredDino"]
+      "hashtags": ["#Turkey", "#Smol", "#FeatheredDino"]
     },
     {
       "id": 3,
@@ -56,21 +56,21 @@
       "years_ago": "155-150 million",
       "quick_facts": [
         "Had plates along its back for temperature control",
-        "Brain was size of a walnut",
-        "Tail spikes called thagomizer",
+        "Brain was the size of a walnut",
+        "Tail spikes called thagomizers",
         "Lived alongside Allosaurus and Torvosaurus"
       ],
       "stats": {
-        "length": "30 feet",
-        "height": "14 feet",
-        "weight": "5 tons",
-        "speed": "12 mph"
+        "length": "9.14 meters",
+        "height": "4.26 meters",
+        "weight": "3.4 tons",
+        "speed": "7 km/h"
       },
       "diet": "Herbivore",
       "fun_fact": "Its brain was so small that scientists once thought it had two brains!",
       "image_url": "assets/stego.jpg",
       "image_credit": "Kirill Khrol",
-      "hashtags": ["#StegosaurusFacts", "#PlantEater", "#JurassicDino"]
+      "hashtags": ["#StegosaurusFacts", "#PlantEater", "#SlowMF"]
     }
   ]
 }
