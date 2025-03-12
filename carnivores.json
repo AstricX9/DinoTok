@@ -9,13 +9,14 @@
       "quick_facts": [
         "Largest land predator of its time",
         "Could crush bones with 8,000-pound bite force",
-        "Had tiny arms but powerful legs"
+        "Had tiny arms but powerful legs",
+        "Had lips!"
       ],
       "stats": {
-        "length": "40 feet",
-        "height": "20 feet",
-        "weight": "7 tons",
-        "speed": "25 mph"
+        "length": "12.3 meters",
+        "height": "13 meters",
+        "weight": "16 tons",
+        "speed": "40 km/h"
       },
       "diet": "Carnivore",
       "fun_fact": "T-Rex had the strongest bite of any land animal ever!",
@@ -32,13 +33,14 @@
       "quick_facts": [
         "Actually turkey-sized, not huge like in movies",
         "Had feathers like modern birds",
-        "Hunted in packs"
+        "Belived to have hunted in packs",
+        "Had a deadly sickle claw"
       ],
       "stats": {
-        "length": "6.8 feet",
-        "height": "1.6 feet",
-        "weight": "33 pounds",
-        "speed": "40 mph"
+        "length": "195 centimeters",
+        "height": "48 centimeters",
+        "weight": "14 kg",
+        "speed": "63 km/h"
       },
       "diet": "Carnivore",
       "fun_fact": "Velociraptors were actually covered in feathers and more closely related to modern birds than lizards!",

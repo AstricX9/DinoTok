@@ -9,13 +9,14 @@
       "quick_facts": [
         "Largest land predator of its time",
         "Could crush bones with 8,000-pound bite force",
-        "Had tiny arms but powerful legs"
+        "Had tiny arms but powerful legs",
+        "Had lips!"
       ],
       "stats": {
-        "length": "40 feet",
-        "height": "20 feet",
-        "weight": "7 tons",
-        "speed": "25 mph"
+        "length": "12.3 meters",
+        "height": "13 meters",
+        "weight": "16 tons",
+        "speed": "40 km/h"
       },
       "diet": "Carnivore",
       "fun_fact": "T-Rex had the strongest bite of any land animal ever!",
@@ -30,9 +31,10 @@
       "period": "Late Cretaceous",
       "years_ago": "75-71 million",
       "quick_facts": [
-        "Actually turkey-sized, not huge like in movies",
+        "Actually turkey-sized, not huge like in the movies",
         "Had feathers like modern birds",
-        "Hunted in packs"
+        "Belived to have hunted in packs",
+        "Had a deadly sickle claw"
       ],
       "stats": {
         "length": "6.8 feet",
@@ -55,7 +57,8 @@
       "quick_facts": [
         "Had plates along its back for temperature control",
         "Brain was size of a walnut",
-        "Tail spikes called thagomizer"
+        "Tail spikes called thagomizer",
+        "Lived alongside Allosaurus and Torvosaurus"
       ],
       "stats": {
         "length": "30 feet",
