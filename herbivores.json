@@ -19,7 +19,8 @@
       },
       "diet": "Herbivore",
       "fun_fact": "Its brain was so small that scientists once thought it had two brains!",
-      "image_url": "assets/trex.jpg",
+      "image_url": "assets/stego.jpg",
+      "image_credit": "Kirill Khrol",
       "hashtags": ["#StegosaurusFacts", "#PlantEater", "#JurassicDino"]
     }
   ]

@@ -39,6 +39,8 @@ async function loadDinosaurs(type = 'all') {
                     <div class="hashtags">
                         ${dino.hashtags.map(tag => `<span class="hashtag">${tag}</span>`).join('')}
                     </div>
+                    
+                    <div class="image-credit">Image: ${dino.image_credit || 'Unknown source'}</div>
                 </div>
             `;
             

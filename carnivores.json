@@ -19,7 +19,8 @@
       },
       "diet": "Carnivore",
       "fun_fact": "T-Rex had the strongest bite of any land animal ever!",
-      "image_url": "assets/trex.jpg",
+      "image_url": "assets/max-rex.jpg",
+      "image_credit": "Max Bellomio",
       "hashtags": ["#DinoFacts", "#TRex", "#Prehistoric", "#DinoTok"]
     },
     {
@@ -41,7 +42,8 @@
       },
       "diet": "Carnivore",
       "fun_fact": "Velociraptors were actually covered in feathers and more closely related to modern birds than lizards!",
-      "image_url": "assets/trex.jpg",
+      "image_url": "assets/velo.jpg",
+      "image_credit": "Prehistoric Planet AppleTV+",
       "hashtags": ["#RaptorFacts", "#DinoScience", "#FeatheredDino"]
     }
   ]
