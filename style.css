@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+body {
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+:root {
+    --color-primary: #310acf; 
+    --color-primary-subtle: #310acf11; 
+    --color-background: #000;
+    --color-text: #fff;
+    --color-text-secondary: #ccc;
+    --color-overlay: rgba(0, 0, 0, 0.8);
+    --color-overlay-light: rgba(255, 255, 255, 0.1);
+    --color-overlay-hover: rgba(255, 255, 255, 0.2);
+    --font-family: 'Segoe UI', system-ui, sans-serif;
+    --border-radius-lg: 50px;
+    --border-radius-md: 20px;
+    --border-radius-sm: 8px;
+}
+.welcome-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    z-index: 2000;
+    transition: transform 2s;
+}
+.welcome-screen.hide {
+    transform: scale(0);
+}
+.welcome-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+.enter-button {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background: var(--color-primary);
+    color: var(--color-text);
+    border: none;
+    border-radius: var(--border-radius-lg);
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 2s ease-out 1s forwards;
+    transition: transform 0.3s;
+}
+.enter-button:hover {
+    transform: scale(1.1);
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.star-wars-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    perspective: 400px;
+    z-index: 1500;
+    display: none;
+}
+.star-wars-transition.show {
+    display: block;
+}
+.crawl {
+    position: relative;
+    top: 99999px;
+    transform-origin: 50% 100%;
+    animation: crawl 60s linear;
+}
+@keyframes crawl {
+    0% {
+        top: 0;
+        transform: rotateX(20deg) translateZ(0);
+    }
+    100% {
+        top: -6000px;
+        transform: rotateX(25deg) translateZ(-2500px);
+    }
+}
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.logo span {
+    color: var(--color-primary);
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    padding: 8px;
+}
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+.filter-buttons {
+    display: flex;
+    gap: 1rem;
+}
+.filter-button {
+    background: var(--color-overlay-light);
+    border: none;
+    color: var(--color-text);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.filter-button.active {
+    background: var(--color-primary);
+    color: var(--color-text);
+}
+.filter-button:hover {
+    background: var(--color-overlay-hover);
+}
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    .filter-buttons {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,0.9);
+        padding: 1rem;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .filter-buttons.show {
+        display: flex;
+    }
+    .filter-button {
+        text-align: center;
+    }
+}
+.container {
+    max-width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    padding-top: 70px;
+}
+.dino-card {
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.dino-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+.content {
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.dino-name {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+.nickname {
+    font-size: 1.2em;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+.quick-facts {
+    margin: 15px 0;
+}
+.quick-facts li {
+    list-style: none;
+    margin: 5px 0;
+    padding-left: 20px;
+    position: relative;
+}
+.quick-facts li:before {
+    content: '🦖';
+    position: absolute;
+    left: 0;
+}
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+.stat-item {
+    background: var(--color-overlay-light);
+    padding: 8px 12px;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.hashtags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+.hashtag {
+    background: rgba(255,255,255,0.2);
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+.fun-fact {
+    margin-top: 15px;
+    padding: 10px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+}

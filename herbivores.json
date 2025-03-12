@@ -1,0 +1,26 @@
+{
+  "dinosaurs": [
+    {
+      "id": 1,
+      "name": "Stegosaurus",
+      "nickname": "Roof Lizard",
+      "period": "Late Jurassic",
+      "years_ago": "155-150 million",
+      "quick_facts": [
+        "Had plates along its back for temperature control",
+        "Brain was size of a walnut",
+        "Tail spikes called thagomizer"
+      ],
+      "stats": {
+        "length": "30 feet",
+        "height": "14 feet",
+        "weight": "5 tons",
+        "speed": "12 mph"
+      },
+      "diet": "Herbivore",
+      "fun_fact": "Its brain was so small that scientists once thought it had two brains!",
+      "image_url": "assets/trex.jpg",
+      "hashtags": ["#StegosaurusFacts", "#PlantEater", "#JurassicDino"]
+    }
+  ]
+}

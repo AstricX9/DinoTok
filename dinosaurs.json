@@ -1,0 +1,70 @@
+{
+  "dinosaurs": [
+    {
+      "id": 1,
+      "name": "Tyrannosaurus Rex",
+      "nickname": "T-Rex",
+      "period": "Late Cretaceous",
+      "years_ago": "68-66 million",
+      "quick_facts": [
+        "Largest land predator of its time",
+        "Could crush bones with 8,000-pound bite force",
+        "Had tiny arms but powerful legs"
+      ],
+      "stats": {
+        "length": "40 feet",
+        "height": "20 feet",
+        "weight": "7 tons",
+        "speed": "25 mph"
+      },
+      "diet": "Carnivore",
+      "fun_fact": "T-Rex had the strongest bite of any land animal ever!",
+      "image_url": "assets/trex.jpg",
+      "hashtags": ["#DinoFacts", "#TRex", "#Prehistoric", "#DinoTok"]
+    },
+    {
+      "id": 2,
+      "name": "Velociraptor",
+      "nickname": "Raptor",
+      "period": "Late Cretaceous",
+      "years_ago": "75-71 million",
+      "quick_facts": [
+        "Actually turkey-sized, not huge like in movies",
+        "Had feathers like modern birds",
+        "Hunted in packs"
+      ],
+      "stats": {
+        "length": "6.8 feet",
+        "height": "1.6 feet",
+        "weight": "33 pounds",
+        "speed": "40 mph"
+      },
+      "diet": "Carnivore",
+      "fun_fact": "Velociraptors were actually covered in feathers and more closely related to modern birds than lizards!",
+      "image_url": "assets/trex.jpg",
+      "hashtags": ["#RaptorFacts", "#DinoScience", "#FeatheredDino"]
+    },
+    {
+      "id": 3,
+      "name": "Stegosaurus",
+      "nickname": "Roof Lizard",
+      "period": "Late Jurassic",
+      "years_ago": "155-150 million",
+      "quick_facts": [
+        "Had plates along its back for temperature control",
+        "Brain was size of a walnut",
+        "Tail spikes called thagomizer"
+      ],
+      "stats": {
+        "length": "30 feet",
+        "height": "14 feet",
+        "weight": "5 tons",
+        "speed": "12 mph"
+      },
+      "diet": "Herbivore",
+      "fun_fact": "Its brain was so small that scientists once thought it had two brains!",
+      "image_url": "assets/trex.jpg",
+      "hashtags": ["#StegosaurusFacts", "#PlantEater", "#JurassicDino"]
+    }
+  ]
+}

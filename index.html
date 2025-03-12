@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DinoTok - Prehistoric Knowledge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="welcome-screen">
+        <h1 class="welcome-title">Welcome to the new era of dinosaur facts</h1>
+        <button class="enter-button">Enter the DinoVerse</button>
+    </div>
+    <div class="star-wars-transition">
+        <div class="crawl"></div>
+    </div>
+    <nav class="nav">
+        <div class="logo">
+            🦖 <span>DinoTok</span>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="filter-buttons">
+            <button class="filter-button active" data-type="all">All Dinosaurs</button>
+            <button class="filter-button" data-type="carnivores">Carnivores</button>
+            <button class="filter-button" data-type="herbivores">Herbivores</button>
+        </div>
+    </nav>
+    <div class="container" id="container"></div>
+    <script src="load.js"></script>
+    <script>
+        document.querySelector('.enter-button').addEventListener('click', () => {
+            document.querySelector('.welcome-screen').classList.add('hide');
+            const transition = document.querySelector('.star-wars-transition');
+            transition.classList.add('show');
+            setTimeout(() => {
+                transition.classList.remove('show');
+            }, 6000);
+        });
+    </script>
+</body>
+</html>
