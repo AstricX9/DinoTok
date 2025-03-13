@@ -12,12 +12,12 @@ body {
 
 :root {
     --color-primary: #310acf; 
-    --color-primary-subtle: #310acf11; 
+    --color-primary-subtle: #310acfc5; 
     --color-background: #000;
     --color-text: #fff;
     --color-text-secondary: #ccc;
-    --color-overlay: rgba(0, 0, 0, 0.8);
-    --color-overlay-light: rgba(255, 255, 255, 0.1);
+    --color-overlay: rgba(0, 0, 0, 0.932);
+    --color-overlay-light: rgba(255, 255, 255, 0.114);
     --color-overlay-hover: rgba(255, 255, 255, 0.2);
     --font-family: 'Segoe UI', system-ui, sans-serif;
     --border-radius-lg: 50px;
@@ -64,6 +64,8 @@ body {
 .enter-button:hover {
     transform: scale(1.1);
 }
+
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -152,7 +154,12 @@ body {
     color: var(--color-text);
 }
 .filter-button:hover {
-    background: var(--color-overlay-hover);
+    background: var(--color-primary-subtle);
+}
+
+.filter-button:active {
+    background: var(--color-primary);
+    transform: scale(0.90);
 }
 @media (max-width: 768px) {
     .hamburger {
@@ -204,13 +211,12 @@ body {
 .content {
     position: relative;
     z-index: 2;
-    background: linear-gradient(rgba(0, 0, 0, 0.132), rgba(0, 0, 0, 0.6));
+    background: linear-gradient(rgba(0, 0, 0, 0.267), rgb(0, 0, 0));
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s ease-in-out;
 }
-
 
 .dino-name {
     font-size: 1.8em;
@@ -233,9 +239,11 @@ body {
     position: relative;
 }
 .quick-facts li:before {
-    content: '🦖';
+    content: '🤔';
     position: absolute;
     left: 0;
+    right: 5;
+    font-weight: bold;
 }
 .stats {
     display: flex;
@@ -260,7 +268,8 @@ body {
     margin-top: 15px;
 }
 .hashtag {
-    background: rgba(255,255,255,0.2);
+    background: var(--color-overlay-light);
+    backdrop-filter: blur(5px);
     padding: 5px 10px;
     border-radius: 15px;
     font-size: 0.9rem;
@@ -268,7 +277,8 @@ body {
 .fun-fact {
     margin-top: 15px;
     padding: 10px;
-    background: rgba(255,255,255,0.1);
+    background: var(--color-overlay-light);
+    backdrop-filter: blur(5px);
     border-radius: 8px;
 }
 .image-credit {
